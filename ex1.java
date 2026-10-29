@@ -63,22 +63,23 @@ import java.io.PrintStream;
 	 public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
 		 PrintStream o = System.out;
-		 o.println("Введи по братски x");
+		 o.println("Введи x");
 		 int x = sc.nextInt();
 		 ex1calc o1 = new ex1calc(x);
-		 o.println("project1 расчёт по формуле y = 3 * x + 5");
+		 o.println("y = 3 * x + 5");
 		 int y1 = o1.project1();
 		 o.println(y1);
-		 o.println("Введите через пробел a и b");
+		 o.println("Введи (через пробел) a и b");
+		 
 		 int a = sc.nextInt();
 		 int b = sc.nextInt();
 		 ex1calc o2 = new ex1calc(a, b);
 		 int y2 = o2.project2();
-		 o.println("project2 расчёт по формуле y = (a + b) / (a - b)");
+		 o.println("y = (a + b) / (a - b)");
 		 o.println(y2);
 		 ex1calc o3 = new ex1calc(a, b, x);
 		 BigInteger y3 = o3.project3();
-		 o.println("project3 расчёт по формуле y =(a * x / b)!");
+		 o.println("y =(a * x / b)!");
 		 o.println(y3);
 		 sc.close();
 		 
